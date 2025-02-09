@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     color: #ffffff;
-    background-color: rgb(75, 18, 1);
+    background-color:rgb(75, 73, 73);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -118,14 +118,14 @@ header.scrolled {
 }
 
 #about {
-    padding: 10px 50px;
+    padding: 10px 90px;
     background-color: #1a1a1a;
     color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-
+    animation: fadeIn 2s ease-in-out;
 }
 
 .about-container {
@@ -156,7 +156,7 @@ header.scrolled {
     font-family: 'Playfair Display', serif;
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #ff6347;
+    color: #ff0000;
 }
 
 .about-text p {
@@ -168,7 +168,7 @@ header.scrolled {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff6347;
+    background-color: #550000;
     color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
@@ -202,4 +202,27 @@ header.scrolled {
     .about-text p {
         font-size: 1em;
     }
+}
+.name {
+    padding: 20px 50px;
+    background-color: #000000;
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+
+.red-text {
+    color: #ff0000; /* Красный цвет */
+}
+
+.white-text {
+    color: #ffffff; /* Белый цвет */
 }
