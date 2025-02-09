@@ -313,7 +313,7 @@ header.scrolled {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    padding: 10px 15px;
+    padding: 15px 22px;
     background-color: #ff6347;
     color: #ffffff;
     border: none;
@@ -339,4 +339,63 @@ section {
 section.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+#contact-info {
+    padding: 50px 90px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.info-grid {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    width: 250px;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.info-card i {
+    font-size: 2.5em;
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+
+.info-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Медиазапросы для адаптации на разных экранах */
+@media (max-width: 768px) {
+    .info-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-card {
+        width: 100%;
+        max-width: 300px;
+    }
 }
